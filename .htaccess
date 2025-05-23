@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect semua permintaan ke venetieconstruction.com
+RewriteCond %{HTTP_HOST} ^venetie\.erikodigital\.com$ [NC]
+RewriteRule ^(.*)$ https://venetieconstruction.com/$1 [R=301,L]
